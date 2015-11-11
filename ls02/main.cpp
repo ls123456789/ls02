@@ -10,6 +10,11 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    int *a;
+    a = (int *)malloc(4);
+    if(a == 0)
+        exit(0);
+    *a = 100;
+    printf("a=%x *a=%x\n",a,*a);
     return 0;
 }
